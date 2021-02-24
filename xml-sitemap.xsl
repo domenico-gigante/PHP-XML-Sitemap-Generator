@@ -8,7 +8,7 @@
 	<xsl:template match="/">
 		<html xmlns="http://www.w3.org/1999/xhtml">
 			<head>
-				<title>XML Sitemap</title>
+				<title>PHP XML Sitemap Generator</title>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 				<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 				<script type="text/javascript" src="http://tablesorter.com/jquery.tablesorter.min.js"></script>
