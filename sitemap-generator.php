@@ -1,17 +1,19 @@
 <?php
 /*************************************************************
- iProDev PHP XML Sitemap Generator
+ ReloadLab PHP XML Sitemap Generator
+ Sviluppata sulla base di iProDev PHP XML Sitemap Generator
  Simple site crawler to create a search engine XML Sitemap.
  Version 1.0
  Free to use, without any warranty.
- Written by iProDev(Hemn Chawroka) http://iprodev.com 28/Mar/2016.
+ Written by Reload(Domenico Gigante) https://www.reloadlab.it 24/Feb/2021.
 
 *************************************************************/
 
 ini_set('memory_limit', '4G');
 set_time_limit(0);
 
-require_once 'simple_html_dom.php';
+// version 1.7 o 1.9, if PHP 5.6+ is available
+require_once('simple_html_dom.php');
 
 // Set true or false to define how the script is used.
 // true:  As CLI script.
@@ -19,7 +21,7 @@ require_once 'simple_html_dom.php';
 define('CLI', true);
 
 define('VERSION', '1.0');                                            
-define('NL', CLI ? "\n" : '<br>');
+define('NL', CLI? "\n": '<br>');
 
 // Set the output file name.
 $file = 'sitemap.xml';
